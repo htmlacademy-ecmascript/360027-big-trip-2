@@ -1,7 +1,7 @@
 import {createElement} from '../render.js';
 import dayjs from 'dayjs';
 import {POINT_TYPES} from '../const.js';
-import {DESTINATIONS, OFFERS_BY_TYPE} from '../mock/point.js';
+import {DESTINATIONS, OFFERS} from '../mock/point.js';
 
 const BLANK_POINT = {
   type: POINT_TYPES[0],
@@ -36,7 +36,7 @@ function createDestinationListTemplate() {
 }
 
 function createOffersTemplate(offerIds, type) {
-  const offersForType = OFFERS_BY_TYPE.find((item) => item.type === type).offers;
+  const offersForType = OFFERS.find((item) => item.type === type).offers;
 
   if (offersForType.length === 0) {
     return '';

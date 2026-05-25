@@ -1,5 +1,3 @@
-import {getRandomArrayElement} from '../utils.js';
-
 const DESTINATIONS = [
   {
     id: 1,
@@ -35,7 +33,7 @@ const DESTINATIONS = [
   },
 ];
 
-const OFFERS_BY_TYPE = [
+const OFFERS = [
   {
     type: 'taxi',
     offers: [
@@ -126,7 +124,7 @@ const OFFERS_BY_TYPE = [
   },
 ];
 
-const mockPoints = [
+export const mockPoints = [
   {
     id: '1',
     type: 'taxi',
@@ -159,8 +157,4 @@ const mockPoints = [
   },
 ];
 
-function getRandomPoint() {
-  return getRandomArrayElement(mockPoints);
-}
-
-export {getRandomPoint, DESTINATIONS, OFFERS_BY_TYPE};
+export {DESTINATIONS, OFFERS};
